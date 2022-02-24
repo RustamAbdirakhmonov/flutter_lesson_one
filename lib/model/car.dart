@@ -5,5 +5,6 @@ class Car{
   int cost;
   int maxSpeed;
   String imageUrl;
-   Car({required this.model,required this.color,required this.cost,required this.maxSpeed,required this.imageUrl});
+  String description;
+   Car({required this.model,required this.color,required this.cost,required this.maxSpeed,required this.imageUrl,required this.description});
 }

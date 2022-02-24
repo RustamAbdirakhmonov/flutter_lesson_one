@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lesson_one/screens/car_detail_screen.dart';
 import 'package:flutter_lesson_one/screens/category_screen.dart';
 
 void main() {
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CategoryScreen(),
+      routes: {
+        '/':(context) => CategoryScreen(),
+        CarDetailScreen.routeArgs:(context)=>CarDetailScreen(),
+      },
     );
   }
 }

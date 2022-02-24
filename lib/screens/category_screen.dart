@@ -19,6 +19,7 @@ class CategoryScreen extends StatelessWidget {
         cost: 7000,
         color: 'white',
         maxSpeed: 240,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
       ),
       Car(
         model: 'Daewo Nexia 2',
@@ -27,6 +28,8 @@ class CategoryScreen extends StatelessWidget {
         cost: 5000,
         color: 'white',
         maxSpeed: 240,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+
       ),
       Car(
         model: 'Daewo Captiva',
@@ -35,6 +38,8 @@ class CategoryScreen extends StatelessWidget {
         cost: 10000,
         color: 'white',
         maxSpeed: 250,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+
       ),
       Car(
         model: 'Chevrolet Malibu 2',
@@ -43,6 +48,8 @@ class CategoryScreen extends StatelessWidget {
         cost: 12000,
         color: 'white',
         maxSpeed: 250,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+
       ),
 
     ];
@@ -107,7 +114,8 @@ class CategoryScreen extends StatelessWidget {
                 color: list[i].color,
                 cost: list[i].cost,
                 maxSpeed: list[i].maxSpeed,
-                imageUrl: list[i].imageUrl
+                imageUrl: list[i].imageUrl,
+                description: list[i].description,
             );
           },
           itemCount: list.length,
